@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sora: "Sora", sans-serif;
+  --font-code: "Source Code Pro", monospace;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  color-scheme: dark;
+ 
+}
+
+* {
+  scroll-behavior: smooth
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-n-8 text-n-1 text-base;
+  }
+}
+
+.rotate-45 {
+  @apply rotate-[45deg]
+}
+
+.rotate-90 {
+  @apply rotate-[90deg]
+}
+
+.rotate-135 {
+  @apply rotate-[135deg]
+}
+
+.rotate-180 {
+  @apply rotate-[180deg]
+}
+
+.rotate-225 {
+  @apply rotate-[225deg]
+}
+
+.rotate-270 {
+  @apply rotate-[270deg]
+}
+
+.rotate-315 {
+  @apply rotate-[315deg]
+}
+
+.rotate-360 {
+  @apply rotate-[360deg]
+}
+
+.-rotate-45 {
+  @apply rotate-[-45deg]
+}
+
+.-rotate-90 {
+  @apply rotate-[-90deg]
+}
+
+.-rotate-135 {
+  @apply rotate-[-135deg]
+}
+
+.-rotate-180 {
+  @apply rotate-[-180deg]
+}
+
+.-rotate-225 {
+  @apply rotate-[-225deg]
+}
+
+.-rotate-270 {
+  @apply rotate-[-270deg]
+}
+
+.-rotate-315 {
+  @apply rotate-[-315deg]
+}
+
+.-rotate-360 {
+  @apply rotate-[-360deg]
+}
+.gradient-border-wrapper {
+  position: relative;
+  padding: 2.5px; /* Adjust the padding as needed */
+  background: linear-gradient(45deg, rgb(235, 31, 211), rgb(175, 11, 175), rgb(214, 146, 19), pink);
+  border-radius: 1.2rem; /* Adjust the border radius as needed */
+}
+.image-gallery-image {
+  border-radius: 1.2rem;
+}
+.border-gradient {
+  border-width: 2px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #7F00FF, #E100FF, #FFA500); /* Purple at the top, orange at the bottom */
+  border-radius: 1rem; 
+}
+
+.border-gradient1 {
+  border-width: 10px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, #140639, #7961BA, #6E4FC0, #15073A); /* Gradient with specified colors */
+  border-radius: 1rem; 
+}
+.image-gallery-image {
+  border-radius: 20px; /* Adjust the radius as needed */
+}
+
+/* Ensure the container holding the image is also rounded */
+.image-gallery-slide {
+  overflow: hidden; /* Prevent the image from overflowing */
+  border-radius: 20px; /* Adjust the radius as needed */
+}
